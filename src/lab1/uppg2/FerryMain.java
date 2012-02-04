@@ -57,11 +57,11 @@ public class FerryMain {
 							System.out.println("Hur många passagerare vill du borda?");
 							System.out.print("Ditt val: ");
 							pVal = input.nextInt();
-							Pass pass = new Pass(pVal);
-							ferry.embark(pass);
+							//Pass pass = new Pass(pVal);
+							//ferry.embark(pass);
 							System.out.println("\nAntal passagerare: "+ ferry.countPassengers()+"\n");
 					case 3:
-							ferry.disembark();
+							//ferry.disembark();
 							System.out.println("\nAntal passagerare: "+ ferry.countPassengers()+"\n");
 				}
 		}
