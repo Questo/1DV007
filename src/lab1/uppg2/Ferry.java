@@ -9,8 +9,8 @@ public interface Ferry {
 	Iterator iterator(); // Vehicle iterator
 	
 	void embark(Vehicle v); // Embark vehicle, warning if not enough space
-	void embar(Passenger p); // Embark passenger, warning if not enough space
-	void disembar();	// Clear (empty) ferry. The money earned remains,
+	void embark(Passenger p); // Embark passenger, warning if not enough space
+	void disembark();	// Clear (empty) ferry. The money earned remains,
 								// i.e., is not reset to zero
 	
 	boolean hasSpaceFor(Vehicle v); // True if we can embark vehicle v

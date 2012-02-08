@@ -10,8 +10,9 @@ public class FerryMain {
 		int val = 0;
 		int pVal = 0;
 		
-		while(true) {
-			System.out.println("Välj vad du vill göra: \n1. Borda fordon\n2. Borda passagerare\n3.Töm båten(Spara pengarna)");
+		boolean loop = true;
+		while(loop == true) {
+			System.out.println("Välj vad du vill göra: \n1. Borda fordon\n2. Borda passagerare\n3. Töm båten(Spara pengarna)\n4. Avbryt");
 			System.out.print("Ditt val: ");
 				val = input.nextInt();
 				switch (val) {
@@ -53,16 +54,22 @@ public class FerryMain {
 									System.err.println("Det valet finns inte");
 									break;
 						}
+						break;
 					case 2:
 							System.out.println("Hur många passagerare vill du borda?");
 							System.out.print("Ditt val: ");
 							pVal = input.nextInt();
-							//Pass pass = new Pass(pVal);
-							//ferry.embark(pass);
+							Passenger pass = new Passenger(pVal);
+							ferry.embark(pass);
 							System.out.println("\nAntal passagerare: "+ ferry.countPassengers()+"\n");
+							break;
 					case 3:
-							//ferry.disembark();
+							ferry.disembark();
 							System.out.println("\nAntal passagerare: "+ ferry.countPassengers()+"\n");
+							break;
+					case 4: 
+							loop=false;
+							System.out.print("Program avbrutet!");
 				}
 		}
 	}

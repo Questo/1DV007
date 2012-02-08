@@ -2,23 +2,16 @@ package lab1.uppg2;
 
 public class Vehicle {
 	
-	protected int prize = 0; // Prize to embark
-	protected int size = 0; // Space of vehicle
-	protected int nPass = 0; // Amount of passengers the vehicle can hold
+	protected int prize = 0; // pris att borda
+	protected int size = 0; // yta för varje fordon
+	protected int nPass = 0; // passagerare
 	
-	/* Help methods to that can be used by extending classes */
-	protected void setPrize(int n) {
-			prize+=n;
-		}
-	protected void setPassenger(int n) {
-			nPass+=n;
-		}
-	protected void setSize(int n) {
-			size+=n;
-		}
-	public void addCar(int n) {
-		
-	}
+	// Hjälp metoder för ärvande klasser
+	protected void setPrize(int n) { prize = n; }
+	protected void setPass(int n) { nPass = n; }
+	protected void setSize(int n) { size = n; }
 	
-	
+	protected int getPass() { return nPass; }
+	protected int getPrize() { return prize; }
+	protected int getSize() { return size; }
 }
