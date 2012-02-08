@@ -1,15 +1,17 @@
 /*
- * Författare: Simon Metsi & Mathias Andreasen
+ * Fï¿½rfattare: Simon Metsi & Mathias Andreasen
  * NewsPaper.java
  */
 package lab1.uppg3;
+
+// Test pÃ¥ GIT
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NewsPaper {
 	
-	private String name = "";				// namnet på nyhetstidningen
+	private String name = "";				// namnet pï¿½ nyhetstidningen
 	private ArrayList<String> news = new ArrayList<>();
 	private Scanner scan = new Scanner(System.in);
 
@@ -18,14 +20,14 @@ public class NewsPaper {
 		name = n;
 	}
 	
-	// Lägger till nyheter i vår ArrayList "news"
+	// Lï¿½gger till nyheter i vï¿½r ArrayList "news"
 	public void addNews(String s) { news.add(s); }
 	
 	private void shareNews() {
 		
 	}
 	
-	// Låter anvÃ¤ndaren välja vilken nyhet som ska skrivas ut
+	// Lï¿½ter anvÃ¤ndaren vï¿½lja vilken nyhet som ska skrivas ut
 	public String printNews() {
 		
 		System.out.print("Just nu finns det " + news.size() + "st nyheter, vilken vill du skriva ut?: ");
