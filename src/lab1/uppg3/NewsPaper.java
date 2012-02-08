@@ -6,6 +6,8 @@ package lab1.uppg3;
 
 // Test på GIT
 
+// Bla bla bla
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
